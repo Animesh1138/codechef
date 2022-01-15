@@ -1,9 +1,16 @@
+/* 
+
+    PROBBALY NOW ITS CORRECT 
+
+*/
+
+
 #include<iostream>
 using namespace std;
 
 int main(){
     
-    int n,N,changes;
+    int n,N,change_1,change_2;
     int R[3],G[3],B[3];
 
     cin>>n;
@@ -15,9 +22,11 @@ int main(){
         cin>>G[0]>>G[1]>>G[2];
         cin>>B[0]>>B[1]>>B[2];
 
-        changes=R[1]+R[2]+G[2];
+        change_1=R[1]+R[2]+G[2];
+        change_2=G[0]+B[0]+B[1];
+        swap=max(change_1,change_2);
 
-        cout<<changes<<endl;
+        cout<<sawp<<endl;
     }
     return 0;
 }
